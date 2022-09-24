@@ -1,0 +1,20 @@
+<div class="border border-2 rounded-bottom">
+    <p class="h3 ms-2">Educacion:</p>
+    <ul>
+    <li *ngFor="let educacion of educationList">
+        <div class="data.container">
+            <div class="logo-image-container">
+                <img class="logo-image" [src]="educacion.img" alt="{{educacion.school}}">
+                <!-- Buscar como usar interpolacion-->
+            </div>
+            <div class="list-info">
+                <div>
+                    <p class="h4">{{educacion.school}}</p>
+                    <p>{{educacion.title}} en {{educacion.carrer}}</p>
+                    <p>{{educacion.start}} - {{educacion.end}}</p>
+                </div>
+            </div>
+        </div>
+    </li>
+    </ul>
+</div>
